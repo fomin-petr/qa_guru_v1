@@ -7,3 +7,7 @@ class User(BaseModel):
     first_name: str
     last_name: str
     avatar: HttpUrl
+
+
+class Users(BaseModel):
+    users: list[User]
